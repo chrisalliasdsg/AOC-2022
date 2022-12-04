@@ -65,7 +65,7 @@ fun score2(p1: String, p2: String): Pair<Int, Int> {
 
 fun main() {
 
-    val scores = File("src/main/kotlin", "day2_input.txt").readLines()
+    val scores = File("src/main/kotlin", "Day2_input.txt").readLines()
         .map {
             val oppChoice = decodeOpponent(it.split(" ")[0])
             val plan = decodePlan(it.split(" ")[1])

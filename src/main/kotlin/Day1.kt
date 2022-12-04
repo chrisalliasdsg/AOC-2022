@@ -2,7 +2,7 @@ import java.io.File
 
 fun main() {
     val elves: MutableList<Int> = mutableListOf(0)
-    File("src/main/kotlin", "day1_input.txt").readLines()
+    File("src/main/kotlin", "Day1_input.txt").readLines()
         .map { it.ifBlank { "0" } }
         .map { it.toInt() }
         .map {

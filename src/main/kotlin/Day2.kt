@@ -32,7 +32,7 @@ fun score(p1: String, p2: String): Pair<Int, Int> {
 
 fun main() {
 
-    val scores = File("src/main/kotlin", "day2_input.txt").readLines()
+    val scores = File("src/main/kotlin", "Day2_input.txt").readLines()
         .map {
             score(
                 decode(it.split(" ")[0]),

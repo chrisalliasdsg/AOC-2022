@@ -19,7 +19,7 @@ fun getPriority(char: Char): Int {
 }
 
 fun part1() {
-    val rucksacks = File("src/main/kotlin", "day3_input.txt").readLines()
+    val rucksacks = File("src/main/kotlin", "Day3_input.txt").readLines()
     val priority = rucksacks
         .map { splitContent(it) }
         .map { it.first.intersect(it.second.toSet()) }
@@ -30,7 +30,7 @@ fun part1() {
 }
 
 fun part2() {
-    val rucksacks = File("src/main/kotlin", "day3_input.txt").readLines()
+    val rucksacks = File("src/main/kotlin", "Day3_input.txt").readLines()
     val priority = rucksacks.chunked(3)
         .map { it[0].toSet().intersect(it[1].toSet()).intersect(it[2].toSet()) }
         .flatten()

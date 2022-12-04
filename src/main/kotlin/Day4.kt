@@ -5,7 +5,7 @@ fun main() {
 }
 
 fun d4p1():Int {
-    return File("src/main/kotlin", "day4_input.txt").readLines()
+    return File("src/main/kotlin", "Day4_input.txt").readLines()
         .map {
             val a:List<Int> = it.split(",")[0].split("-").map{it.toInt()}
             val b:List<Int> = it.split(",")[1].split("-").map{it.toInt()}
