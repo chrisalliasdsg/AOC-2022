@@ -1,5 +1,3 @@
-import java.io.File
-
 fun decode(symbol: String) =
     when (symbol) {
         "A", "X" -> "R"
@@ -32,7 +30,7 @@ fun score(p1: String, p2: String): Pair<Int, Int> {
 
 fun main() {
 
-    val scores = File("src/main/kotlin", "Day2_input.txt").readLines()
+    val scores = readFile("Day2_input.txt")
         .map {
             score(
                 decode(it.split(" ")[0]),

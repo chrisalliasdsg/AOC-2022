@@ -1,11 +1,9 @@
-import java.io.File
-
 fun main() {
     println("count: ${d4p1()}")
 }
 
 fun d4p1():Int {
-    return File("src/main/kotlin", "Day4_input.txt").readLines()
+    return readFile("Day4_input.txt")
         .map {
             val a:List<Int> = it.split(",")[0].split("-").map{it.toInt()}
             val b:List<Int> = it.split(",")[1].split("-").map{it.toInt()}

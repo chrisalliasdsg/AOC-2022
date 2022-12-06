@@ -1,5 +1,3 @@
-import java.io.File
-
 fun decodeOpponent(symbol: String) =
     when (symbol) {
         "A" -> "R"
@@ -65,7 +63,7 @@ fun score2(p1: String, p2: String): Pair<Int, Int> {
 
 fun main() {
 
-    val scores = File("src/main/kotlin", "Day2_input.txt").readLines()
+    val scores = readFile("Day2_input.txt")
         .map {
             val oppChoice = decodeOpponent(it.split(" ")[0])
             val plan = decodePlan(it.split(" ")[1])
