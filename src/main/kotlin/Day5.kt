@@ -1,5 +1,3 @@
-const val DEBUG = false
-
 fun main() {
     val x = mutableListOf<String>("A", "B", "C", "D", "E", "F")
 
